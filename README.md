@@ -50,3 +50,18 @@ The code in this repository consists of the following main components:
 - Ensure proper GPU availability for faster model training if using CUDA.
 
 Feel free to contribute, report issues, or suggest improvements.
+
+
+## Plant Disease Detection Model
+
+Coming Soon...
+
+## Yield Monitoring Model
+
+Coming Soon...
+
+## Hydroponic Farming Using CNN Website 
+
+Coming Soon...
+
+
