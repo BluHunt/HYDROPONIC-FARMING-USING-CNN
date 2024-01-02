@@ -54,7 +54,47 @@ Feel free to contribute, report issues, or suggest improvements.
 
 ## Plant Disease Detection Model
 
-Coming Soon...
+
+### Overview
+This is animplementation of a Convolutional Neural Network (CNN) for detecting plant diseases. The code uses TensorFlow and Keras to build, train, and evaluate the model. The dataset used for training, validation, and testing consists of images of plants with different health conditions.
+
+### Code Structure
+
+#### 1. **Data Loading and Visualization**: 
+- The script begins by loading a set of plant images from a specified directory. It then visualizes a subset of these images using Matplotlib.
+
+#### 2. **Data Preprocessing**: 
+- The script uses the `ImageDataGenerator` class from Keras to perform real-time data augmentation. This includes rescaling pixel values and applying various transformations like rotation, shift, shear, and flip to increase the diversity of the training dataset.
+
+#### 3. **Model Architecture**: 
+- A simple CNN model is defined using the Sequential API of Keras. It consists of convolutional layers with max-pooling, followed by fully connected layers. The model is compiled with the Adam optimizer and categorical crossentropy loss.
+
+#### 4. **Model Training**: 
+- The model is trained using the `fit` method on the training data generator. A ModelCheckpoint callback is used to save the best model during training based on validation accuracy.
+
+#### 5. **Model Evaluation**: 
+- The trained model is evaluated on both the training and validation sets to assess its performance.
+
+#### 6. **Test Set Evaluation**: 
+- The script assumes the existence of a separate test set directory, and the model is evaluated on this set. Optionally, predictions can be obtained for further analysis.
+
+#### 7. **Loading and Displaying the Model**: 
+- The saved model is loaded and its summary is displayed.
+
+#### 8. **Training History Plotting**:
+- Matplotlib is used to plot the training and validation accuracy as well as loss over epochs.
+
+#### 9. **Image Prediction Function**: 
+- A function is provided to load an image, make predictions using the trained model, and display the image with the predicted label.
+
+### Usage
+1. Ensure you have the required libraries installed (`tensorflow`, `PIL`, `matplotlib`).
+2. Adjust the paths for the training, validation, and test directories.
+3. Run the script to train the model and evaluate its performance.
+4. Use the provided image prediction function to make predictions on new images.
+
+Feel free to customize the code based on your dataset and requirements.
+
 
 ## Yield Monitoring Model
 
